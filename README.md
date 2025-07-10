@@ -18,9 +18,9 @@ graph TD
         subgraph E_ENV [Linux Environment in VM/LXC]
             D
         end
-        E --> F[Service 1 (e.g., Web App in VM/LXC)];
-        E --> G[Service 2 (e.g., Database in VM/LXC)];
-        E --> H[Service N (on Proxmox Host or another VM/LXC)];
+        E --> F[Service 1 Web App in VM/LXC];
+        E --> G[Service 2 Database in VM/LXC];
+        E --> H[Service N on Proxmox Host or another VM/LXC];
     end
 
     style PVE fill:#f9f,stroke:#333,stroke-width:2px,color:#000
