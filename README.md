@@ -14,7 +14,7 @@ graph TD
 
     subgraph PVE[Proxmox VE Host]
         direction LR
-        D -.-> E[VM / LXC Container];
+        D --> E[VM / LXC Container];
         subgraph E_ENV [Linux Environment in VM/LXC]
             D
         end
