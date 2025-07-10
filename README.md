@@ -8,7 +8,7 @@ The following diagram illustrates how Cloudflare Tunnel integrates with a Proxmo
 
 ```mermaid
 graph TD
-    A[🌐 User / Internet] --> B{Cloudflare Network};
+    A[🌐 User / Internet] --> B[Cloudflare Network];
     B --> C[🚀 Cloudflare Tunnel];
     C --> D[💻 cloudflared Daemon];
 
