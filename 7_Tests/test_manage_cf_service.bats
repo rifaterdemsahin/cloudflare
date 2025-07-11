@@ -1,8 +1,8 @@
 #!/usr/bin/env bats
 
-# Load bats-support and bats-assert, assuming they are in tests/lib
-load 'tests/lib/bats-support/load.bash'
-load 'tests/lib/bats-assert/load.bash'
+# Load bats-support and bats-assert, assuming they are in 7_Tests/lib
+load '7_Tests/lib/bats-support/load.bash'
+load '7_Tests/lib/bats-assert/load.bash'
 
 DEFAULT_MOCK_CONFIG_FILENAME="config.yml"
 

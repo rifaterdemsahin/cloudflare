@@ -1,9 +1,9 @@
 #!/usr/bin/env bats
 
 # Load bats-support and bats-assert. Adjust path if libraries are installed elsewhere.
-# Assumed to be in tests/lib relative to project root for a Codespaces environment.
-load 'tests/lib/bats-support/load.bash'
-load 'tests/lib/bats-assert/load.bash'
+# Assumed to be in 7_Tests/lib relative to project root for a Codespaces environment.
+load '7_Tests/lib/bats-support/load.bash'
+load '7_Tests/lib/bats-assert/load.bash'
 
 setup() {
     # Create a temporary directory for testing
