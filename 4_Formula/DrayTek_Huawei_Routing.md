@@ -26,7 +26,7 @@ graph TD
         PROXMOX[Proxmox Server<br>192.168.2.222]
     end
 
-    Router[DrayTek/Huawei Router<br>(Gateway for both subnets)<br>e.g., 192.168.9.1 & 192.168.2.1]
+    Router[DrayTek/Huawei Router<br> Gateway for both subnets <br>e.g., 192.168.9.1 & 192.168.2.1]
 
     MBP --- Router
     Router --- N8N
