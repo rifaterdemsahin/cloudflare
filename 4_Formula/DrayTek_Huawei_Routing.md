@@ -26,7 +26,7 @@ graph TD
         PROXMOX[Proxmox Server<br>192.168.2.222]
     end
 
-    Router[DrayTek/Huawei Router<br> Gateway for both subnets <br>e.g., 192.168.9.1 & 192.168.2.1]
+    Router[DrayTek/Huawei Router<br>Gateway for both subnets<br>e.g., 192.168.9.1 & 192.168.2.1]
 
     MBP --- Router
     Router --- N8N
@@ -37,19 +37,20 @@ graph TD
     style PROXMOX fill:#90EE90,stroke:#333,stroke-width:2px
     style Router fill:#FFD700,stroke:#333,stroke-width:2px
 
-    linkStyle 0 stroke:#FF4500,stroke-width:2px,color:red;
-    linkStyle 1 stroke:#32CD32,stroke-width:2px;
-    linkStyle 2 stroke:#32CD32,stroke-width:2px;
+    linkStyle 0 stroke:#FF4500,stroke-width:2px,color:red
+    linkStyle 1 stroke:#32CD32,stroke-width:2px
+    linkStyle 2 stroke:#32CD32,stroke-width:2px
 
     %% Dashed line indicating desired communication path that is currently problematic
-    MBP --> N8N;
-    MBP --> PROXMOX;
-    linkStyle 3 stroke:#FF0000,stroke-width:2px,stroke-dasharray: 5 5;
-    linkStyle 4 stroke:#FF0000,stroke-width:2px,stroke-dasharray: 5 5;
+    MBP -.-> N8N
+    MBP -.-> PROXMOX
+    linkStyle 3 stroke:#FF0000,stroke-width:2px,stroke-dasharray: 5 5
+    linkStyle 4 stroke:#FF0000,stroke-width:2px,stroke-dasharray: 5 5
 
-    note right of MBP : Needs to access services on 192.168.2.0/24
-    note left of PROXMOX : Hosts n8n and other services
-    note top of Router : Must route traffic between<br>192.168.9.0/24 and 192.168.2.0/24
+    %% Notes using clickable elements
+    click MBP "javascript:alert('Needs to access services on 192.168.2.0/24')"
+    click PROXMOX "javascript:alert('Hosts n8n and other services')"
+    click Router "javascript:alert('Must route traffic between 192.168.9.0/24 and 192.168.2.0/24')"
 ```
 
 ## The Solution: Static Route
