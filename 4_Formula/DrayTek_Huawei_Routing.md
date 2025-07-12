@@ -42,8 +42,8 @@ graph TD
     linkStyle 2 stroke:#32CD32,stroke-width:2px;
 
     %% Dashed line indicating desired communication path that is currently problematic
-    MBP -.-> N8N;
-    MBP -.-> PROXMOX;
+    MBP --> N8N;
+    MBP --> PROXMOX;
     linkStyle 3 stroke:#FF0000,stroke-width:2px,stroke-dasharray: 5 5;
     linkStyle 4 stroke:#FF0000,stroke-width:2px,stroke-dasharray: 5 5;
 
